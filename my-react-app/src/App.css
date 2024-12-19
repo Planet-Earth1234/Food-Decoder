@@ -1,0 +1,232 @@
+/* Body background with food-related gradient */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #2c3e50, #34495e, #ecf0f1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url("background.png"); /* Background food image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* App Header */
+.App-header {
+  text-align: center;
+  background: rgba(248, 180, 0, 0.8); /* Semi-transparent background */
+  padding: 30px 20px;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.App-logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-upload-input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #f8b400;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.image-upload-input:focus {
+  border-color: #ff6f00;
+  outline: none;
+}
+
+/* Predict Button with icon */
+.predict-button {
+  padding: 12px 30px;
+  background-color: #ff6f00;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.predict-button i {
+  margin-right: 10px;
+}
+
+.predict-button:hover {
+  transform: translateY(-4px);
+  background-color: #e65100;
+}
+
+.predict-button:active {
+  transform: translateY(2px);
+}
+
+.loading-message {
+  font-size: 1.1rem;
+  color: #f8b400;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out infinite;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.prediction-result {
+  margin-top: 20px;
+}
+
+.prediction-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.prediction-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-preview {
+  margin-top: 20px;
+}
+
+.preview-image {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.preview-image:hover {
+  transform: scale(1.05);
+}
+
+/* Chat Section */
+.chat-section {
+  background-color: #fffbf1;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.chat-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chat-input {
+  padding: 12px;
+  width: 70%;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #033410;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.chat-input:focus {
+  border-color: #ff6f00;
+}
+
+.chat-submit-button {
+  padding: 12px 20px;
+  background-color: #f8b400;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chat-submit-button i {
+  margin-right: 10px;
+}
+
+.chat-submit-button:hover {
+  background-color: #ff6f00;
+  transform: translateY(-3px);
+}
+
+.chat-submit-button:active {
+  transform: translateY(2px);
+}
+
+.chat-response {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f8b400;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
