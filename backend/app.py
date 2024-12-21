@@ -10,7 +10,7 @@ from torchvision import transforms
 import google.generativeai as genai
 
 # Configure the Gemini API
-genai.configure(api_key="AIzaSyCef7D1ZXtqI1REyetUCPOr5KNjwtDzK2A")  # Load API key from environment variable
+genai.configure(api_key="yourapi key")  # Load API key from environment variable
 model = genai.GenerativeModel("gemini-1.5-flash")  # Load the Gemini model
 
 # Initialize Flask app
