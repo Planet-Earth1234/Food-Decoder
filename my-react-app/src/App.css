@@ -230,3 +230,12 @@ footer {
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+.Predicted-food {
+  font-size: 48px;  /* Set the font size */
+  font-weight: bold; /* Optional, set the font weight */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient from red to orange */
+  background-clip: text; 
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent */
+}

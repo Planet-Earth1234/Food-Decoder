@@ -11,6 +11,7 @@ function App() {
   const [chatQuery, setChatQuery] = useState(""); // New state to store user chat input
   const [chatResponse, setChatResponse] = useState(""); // State to store the Gemini response
 
+  
   const handleImageChange = (event) => {
     setSelectedImage(event.target.files[0]);
     setPrediction(null); // Clear previous prediction
@@ -105,7 +106,7 @@ function App() {
       <div className="prediction-result">
         <div className="prediction-card">
           <h3>Predicted Food:</h3>
-          <p>{prediction}</p>
+          <p className='Predicted-food'>{prediction}</p>
         </div>
       </div>
     )}

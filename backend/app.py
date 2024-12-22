@@ -19,7 +19,7 @@ cors = CORS(app, origins="*")
 
 # Load the pre-trained EfficientNet model for image classification
 model_img = CustomEfficientNet()
-model_weights_path = r"C:\Users\Yash\Downloads\model_weights.pth"
+model_weights_path =  os.path.join(os.path.dirname(__file__), 'model_weights.pth')
 model_img.load_state_dict(torch.load(model_weights_path, map_location=torch.device('cpu')))
 model_img.eval()
 
